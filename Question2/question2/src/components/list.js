@@ -12,7 +12,7 @@ function TrainList() {
   useEffect(() => {
     const fetchTrains = async () => {
       try {
-        const response = await axios.get('http://20.244.56.144:80/train/trains');
+        const response = await axios.get();
         setTrains(response.data);
         setLoading(false);
       } catch (error) {
